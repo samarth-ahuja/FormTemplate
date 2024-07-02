@@ -1,0 +1,10 @@
+.formContainer{
+    display:flex;
+    flex-direction: column;
+    padding:2px;
+}
+.formBlock{
+    display: flex;
+    flex-direction: column;
+    margin-bottom:5px;
+}
