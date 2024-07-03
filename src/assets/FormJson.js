@@ -40,11 +40,11 @@ export const formJson = {
                     "children": []
                 },
                 {
-                    "type": "TEXT_BOX",
+                    "type": "RADIO_BUTTON",
                     "label": "Ae seats cleaned?",
                     "name": "seatsCleaned",
                     "optional": false,
-                    "values": [],
+                    "values": ["YES","NO","Don't Know"],
                     "trigger_child": null,
                     "children": []
                 }

@@ -49,7 +49,7 @@ export default function FormTemplate() {
                         return <div className='formBlock' key={item.heading}>
                             <h3>{item.heading}</h3>
                             {item.elements.map((field) => {
-                                return <InputField item={field} key={field.name} inputFieldValue={formData[field.name]} changeInputFields={changeInputFields}></InputField>
+                                return <InputField item={field} key={field.name} inputFieldValue={formData[field.name]} changeInputFields={changeInputFields} required={!field.optional}></InputField>
                             })}
                         </div>
                     }
