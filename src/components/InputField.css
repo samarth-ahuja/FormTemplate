@@ -1,0 +1,9 @@
+.form-input{
+    width:fit-content;
+}
+.form-field-control{
+    display: flex;
+    flex-direction: column;
+    width:30%;
+    margin:5px;
+}

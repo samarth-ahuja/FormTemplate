@@ -1,0 +1,8 @@
+.textBoxInput{
+    width:100% !important;
+    margin-bottom: 15px!important;
+}
+
+.textBoxInput input::placeholder{
+    text-align: center;
+}

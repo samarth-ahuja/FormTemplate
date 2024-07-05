@@ -1,0 +1,21 @@
+.loginContainer{
+    margin:auto;
+    max-width: 440px!important;
+    width: 100%;
+    margin-top: 50px;
+    padding:30px 40px 30px 40px !important;
+}
+.BoldText{
+    font-weight: bolder !important;
+}
+.btn{
+    margin-bottom: 10px !important;
+    width:100%;
+    display:block;
+    border:1px solid #ddd !important;
+    padding:auto;
+}
+.reset-link{
+    color:#f47c21 !important;
+    text-decoration: none !important;
+}

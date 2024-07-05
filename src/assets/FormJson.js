@@ -16,6 +16,24 @@ export const formJson = {
                 },
                 {
                     "type": "TEXT_BOX",
+                    "label": "Driver Name",
+                    "name": "driverName3",
+                    "optional": false,
+                    "values": [],
+                    "trigger_child": null,
+                    "children": []
+                },
+                {
+                    "type": "CHECK_BOX",
+                    "label": "Driver Name",
+                    "name": "driverName2",
+                    "optional": false,
+                    "values": [1,2,3],
+                    "trigger_child": null,
+                    "children": []
+                },
+                {
+                    "type": "TEXT_BOX",
                     "label": "Bus No.",
                     "name": "vehicleNumber",
                     "optional": false,
@@ -31,11 +49,11 @@ export const formJson = {
             "type": "BLOCK",
             "elements": [
                 {
-                    "type": "TEXT_BOX",
+                    "type": "RADIO_BUTTON",
                     "label": "Is bus clean?",
                     "name": "busClean",
                     "optional": false,
-                    "values": [],
+                    "values": ["YES","NO"],
                     "trigger_child": null,
                     "children": []
                 },

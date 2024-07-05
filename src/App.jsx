@@ -1,24 +1,36 @@
 import { useState } from 'react';
-import './App.css'
-import {Box,ThemeProvider} from '@mui/material';
-import FormTemplate from './components/FormTemplate';
+import { RouterProvider,createBrowserRouter } from 'react-router-dom';
+import FormPage from './views/FormPage';
+import LoginPage from './views/LoginPage';
+import { CssBaseline,createTheme,ThemeProvider} from '@mui/material';
+
+const theme = createTheme({
+  palette:{
+    primary:{
+      main:"#0000000",
+    },
+    orangish:{
+      main:'#f47c21',
+    },
+  }
+})
+
+const router = createBrowserRouter([
+  {path:'/',element:<LoginPage/>},
+  {path:'/login',element:<LoginPage/>},
+  {path:'/form',element:<FormPage/>}
+])
 
 function App() {
   return (
-    <ThemeProvider
-      theme={{
-        palette: {
-          primary: {
-            main: '#007FFF',
-            dark: '#0066CC',
-          },
-        },
-      }}
-    >
-      <Box>
-        <FormTemplate></FormTemplate>
-      </Box>
+    <>
+    <ThemeProvider theme={theme}>
+    {/* <LocalizationProvider dateAdapter={AdapterDateFns}> */}
+    <RouterProvider router={router}/>
+      <CssBaseline/>
+      {/* </LocalizationProvider> */}
     </ThemeProvider>
+    </>
   )
 }
 
